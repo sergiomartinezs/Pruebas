@@ -1,5 +1,4 @@
 describe("test suite - conjunto de pruebas", () => {
-    // esto valida pag d inicio
     beforeEach(() => {
         cy.visit("http://zero.webappsecurity.com/index.html")
 
@@ -28,8 +27,6 @@ describe("test suite - conjunto de pruebas", () => {
 
 
     })
-    // ONLY PARA CORRER SOLO UNA PRUEBA
-
     it("Prueba de validacion grafico 3", () => {
         cy.get("#signin_button").click()
         cy.get('#user_login').type("username")
